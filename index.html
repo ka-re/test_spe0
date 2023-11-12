@@ -8,13 +8,25 @@
 
     
     <!-- model-viewerのJSファイルを取り込む -->
-    <script type="module" src="./model-viewer_code.js">
+    <!-- <script type="module" 
+    src="./model-viewer_code.js">
 
       //
       //CDNによりmodel-viewerを取り込む
       // src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
 
       // >
+
+    </script> -->
+
+
+    <!-- model-viewerのJSファイルを取り込む 
+              //
+      //CDNによりmodel-viewerを取り込む
+      // 
+    -->
+    <script type="module" 
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
 
     </script>
 
@@ -83,7 +95,7 @@
 
 
     <!-- model-viewer(html) -->
-    <model-viewer id="dimension-demo" ar="" ar-placement="floor" ar-modes="webxr" ar-scale="fixed" camera-orbit="-30deg auto auto" max-camera-orbit="auto 100deg auto" shadow-intensity="1" camera-controls="" disable-zoom="" src="./cube_small.glb" alt="A 3D model of an armchair." style="width:800px;height:1000px;" ar-status="not-presenting">   
+    <model-viewer id="dimension-demo" ar="" ar-placement="floor" ar-modes="webxr" ar-scale="auto" camera-orbit="-30deg auto auto" max-camera-orbit="auto 100deg auto" shadow-intensity="1" camera-controls="" disable-zoom="" src="./untitled.glb" alt="A 3D model of an armchair." style="width:800px;height:1000px;" ar-status="not-presenting">   
     <!--  
       id:id名を付ける(このHTML要素に)
       ar:サポートされているデバイスでARエクスペリエンスを起動する機能を有効する。
@@ -188,6 +200,8 @@
         <!-- 上記の文字の右側に表示されるボックスの要素 -->
         <select id="src">
           <!-- <opion value="表示させるオブジェクトファイル"> 選択肢に出てくる文字 -->
+            <option value="./untitled.glb">spe</option>               <!-- 選択肢の上から1番目のオブジェクトと、実際に表示される文字 -->
+
           <option value="./cube_small.glb">cube_small(小)</option>               <!-- 選択肢の上から1番目のオブジェクトと、実際に表示される文字 -->
           <option value="./cube_small_red.glb">cube_small(赤)</option>      <!-- 選択肢の上から2番目    〃     -->
           <option value="./cube_small_blue.glb">cube_small(青)</option>   <!-- 選択肢の上から3番目    〃     -->
